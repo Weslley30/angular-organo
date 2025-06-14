@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class LivroComponent {
 
+  alternarFavorito() {
+    this.livro.favorito = !this.livro.favorito
+  }
+
   livro = {
     titulo: "Warhammer O emperio",
     autoria: "black library",
