@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CabecalhoComponent } from './Componentes/Cabecalho/cabecalho.component';
+import { RodapeComponent } from './Componentes/Rodape/rodape.component';
+import { LivroComponent } from './Componentes/livro/livro.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    CabecalhoComponent, 
+    RodapeComponent,
+    LivroComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
