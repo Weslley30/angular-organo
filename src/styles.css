@@ -13,3 +13,15 @@ body, html{
     padding: 0;
 }
 
+.texto-titulo {
+  font-family: var(--font-prata);
+  font-size: 40px;
+  font-weight: var(--font-weight-normal);
+  line-height: 72px;
+  text-align: center;
+  color: var(--color-primaria);
+}
+.linha-destaque {
+  display: block;
+  margin: 0 auto;
+}

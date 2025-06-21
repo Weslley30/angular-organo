@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Livro } from './livro';
 
 @Component({
   selector: 'asas-livro',
@@ -9,14 +10,9 @@ import { Component } from '@angular/core';
 export class LivroComponent {
 
   alternarFavorito() {
-    this.livro.favorito = !this.livro.favorito
+    this.livro().favorito = !this.livro().favorito
   }
 
-  livro = {
-    titulo: "Warhammer O emperio",
-    autoria: "black library",
-    favorito: false,
-    imagem: "https://m.media-amazon.com/images/I/81lyEdkwseL._AC_UF200,600_QL80_.jpg"
-  }
+  livro = input.required<Livro>()
 
 }
